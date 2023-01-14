@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card-image"><img src=<%=icon%> alt ="no image"/></div>
+      <div clas="inner-card">
+        <div class="heading"><h1>Weather in city <%= city %></h1></div>
+        <div class="time"><%= time %></div>
+        <div class="time-description">
+          <span><%=currentDay%> | <%=currentMonth%> <%=currentDate %> | <%=
+          currentYear %></span>
+        </div>
+        <div class="description"><span>The weather is currently <%=description%></span></div>
+      </div>
+    </div>
+  </body>
+</html>
