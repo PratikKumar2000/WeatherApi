@@ -8,6 +8,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
+const port = process.env.PORT || 5000;
+
 app.post('/city', (req, res) => {
     const query = req.body.cityName;
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+ query +"&appid=ae1ef73cb1723860ffb832923300a98a&units=metric"
@@ -71,6 +73,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 })
 
-app.listen(3000, function () {
-    console.log('Server is listening on port 3000');
+app.listen(port, function () {
+    console.log('Server is listening on port',port);
 });
