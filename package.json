@@ -19,6 +19,7 @@
   "homepage": "https://github.com/PratikKumar2000/WeatherApi#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
     "express.js": "^1.0.0",
     "http": "^0.0.1-security"
   }
