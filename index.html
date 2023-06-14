@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather</title>
     <style>
       body {
         margin: 0;
@@ -22,7 +22,7 @@
         padding: 50px 50px;
         background: #fff;
         border-radius: 10px;
-        }
+      }
       .center h1 {
         font-size: 2em;
         border-left: 5px solid dodgerblue;
@@ -67,14 +67,13 @@
         background: dodgerblue;
         color: #fff;
         border: #fff;
-        }
-        .center .inputbox [type="submit"]:hover {
+      }
+      .center .inputbox [type="submit"]:hover {
         background: rgb(129, 154, 180);
-        cursor : pointer;
-         transform: perspective(1px) translateZ(0);
+        cursor: pointer;
+        transform: perspective(1px) translateZ(0);
         transition: all 0.5;
-        }
-
+      }
     </style>
   </head>
   <body>
@@ -82,7 +81,12 @@
       <h1>Weather App</h1>
       <form method="post" action="/city">
         <div class="inputbox">
-          <input type="text" name="cityName" required="required" placeholder="Enter the city name"/>
+          <input
+            type="text"
+            name="cityName"
+            required="required"
+            placeholder="Enter the city name"
+          />
         </div>
         <div class="inputbox">
           <input type="submit" value="submit" />
