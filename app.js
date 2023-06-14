@@ -28,7 +28,8 @@ app.post('/city', (req, res) => {
             var today = new Date();
             var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
             res.render('weather', {
-                city: query, temp: temp, description: weatherDescription, icon: icon_url, currentDay: getCurrentDay(),
+                city: query, temp: temp, description: weatherDescription, icon: icon_url,
+                currentDay: getCurrentDay(),
                 currentMonth: getCurrentMonth(),
                 currentDate: getDate(),
                 currentYear: getYear(),
